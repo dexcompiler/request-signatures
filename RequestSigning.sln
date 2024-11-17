@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RequestSigning.Server", "RequestSigning.Server\RequestSigning.Server.csproj", "{66BA6FE2-775A-4B4B-B7F2-A2832D9AA34E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RequestSigning.Common", "RequestSigning.Common\RequestSigning.Common.csproj", "{9BF56382-E30A-404E-A3A4-81AA10B15778}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RequestSigning.Client", "RequestSigning.Client\RequestSigning.Client.csproj", "{F4C30636-52EB-45BD-86CA-C83575AF6AC4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66BA6FE2-775A-4B4B-B7F2-A2832D9AA34E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66BA6FE2-775A-4B4B-B7F2-A2832D9AA34E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66BA6FE2-775A-4B4B-B7F2-A2832D9AA34E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66BA6FE2-775A-4B4B-B7F2-A2832D9AA34E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BF56382-E30A-404E-A3A4-81AA10B15778}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BF56382-E30A-404E-A3A4-81AA10B15778}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BF56382-E30A-404E-A3A4-81AA10B15778}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BF56382-E30A-404E-A3A4-81AA10B15778}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4C30636-52EB-45BD-86CA-C83575AF6AC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4C30636-52EB-45BD-86CA-C83575AF6AC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4C30636-52EB-45BD-86CA-C83575AF6AC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4C30636-52EB-45BD-86CA-C83575AF6AC4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

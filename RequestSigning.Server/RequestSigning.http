@@ -1,0 +1,6 @@
+@RequestSigning_HostAddress = http://localhost:5252
+
+GET {{RequestSigning_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
