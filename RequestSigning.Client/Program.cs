@@ -3,8 +3,6 @@ using RequestSigning.Common;
 using System.Text.Json.Nodes;
 using Microsoft.Extensions.DependencyInjection;
 
-//using var client = new HttpClient {BaseAddress = new Uri("http://localhost:5252")};
-
 var serviceProvider = new ServiceCollection()
     .AddHttpClient("localClient", client =>
     {
