@@ -1,8 +1,20 @@
 ﻿using System.Net.Http.Json;
 using RequestSigning.Common;
 using System.Text.Json.Nodes;
+using Microsoft.Extensions.DependencyInjection;
 
-using var client = new HttpClient {BaseAddress = new Uri("http://localhost:5252")};
+//using var client = new HttpClient {BaseAddress = new Uri("http://localhost:5252")};
+
+var serviceProvider = new ServiceCollection()
+    .AddHttpClient("localClient", client =>
+    {
+        client.BaseAddress = new Uri("http://localhost:5252");
+    })
+    .Services
+    .BuildServiceProvider();
+var clientFactory = serviceProvider.GetRequiredService<IHttpClientFactory>();
+var client = clientFactory.CreateClient("localClient");
+
 var credentials = new ApiCredentials("client_id_1", "my-client-secret_1");
 var signer = new ApiSigner(credentials.SecretKey);
 
