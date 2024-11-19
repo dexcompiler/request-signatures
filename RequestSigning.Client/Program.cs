@@ -20,10 +20,10 @@ var signer = new ApiSigner(credentials.SecretKey);
 
 try
 {
-    var payload = JsonNode.Parse("""
+    var payload = JsonNode.Parse($$"""
     {
       "message": "Hello, Server! This is a signed request from the Client.",
-      "timestamp": "2024-11-02T01:00:00Z"
+      "timestamp": "{{DateTimeOffset.UtcNow:yyyy-MM-ddTHH:mm:ssZ}}"
     }
     """);
     
